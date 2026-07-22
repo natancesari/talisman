@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talisman Original - Medalla de Protección | 50% OFF</title>
+    <style>
+        /* Paleta de Cores Baseada na Imagem (Tema Místico/Elegante) */
+        :root {
+            --bg-dark: #160e2a; 
+            --gold-accent: #f2c94c; 
+            --gold-dark: #b8962c;
+            --btn-purple: #9b51e0; 
+            --btn-hover: #7b37b8;
+            --text-light: #ffffff;
+            --text-muted: #b0a8c2;
+        }
+
+        /* Reset Básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Container Principal */
+        .presell-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #1f143a 0%, #110a21 100%);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            min-height: 100vh;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        /* Topo / Header */
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(242, 201, 76, 0.2);
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--gold-accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Área de Conteúdo */
+        .content {
+            padding: 30px 20px;
+        }
+        .product-subtitle {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        /* Área da Imagem */
+        .image-wrapper {
+            margin: 0 auto 30px auto;
+            border: 2px solid var(--gold-dark);
+            border-radius: 12px;
+            padding: 10px;
+            max-width: 350px;
+            background-color: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 0 20px rgba(242, 201, 76, 0.15);
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Benefícios (Totalmente White Hat) */
+        .benefits-list {
+            text-align: left;
+            max-width: 450px;
+            margin: 0 auto 30px auto;
+            list-style: none;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .benefits-list li {
+            font-size: 16px;
+            padding: 8px 0 8px 35px;
+            position: relative;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+        .benefits-list li::before {
+            content: "✨"; 
+            position: absolute;
+            left: 5px;
+            top: 8px;
+            font-size: 16px;
+        }
+
+        /* Box de Preço (DESTAQUE MÁXIMO) - CORRIGIDO PARA CELULAR */
+        .price-box {
+            background: linear-gradient(135deg, rgba(242, 201, 76, 0.1) 0%, rgba(0,0,0,0) 100%);
+            border: 2px solid var(--gold-accent);
+            border-radius: 12px;
+            /* Padding superior aumentado para garantir que a tag não cubra o preço */
+            padding: 40px 20px 25px 20px; 
+            margin: 25px auto 30px auto;
+            max-width: 450px;
+            position: relative;
+        }
+        .discount-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--gold-accent);
+            color: #000000;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            /* Regras adicionadas para forçar o ajuste e não vazar a caixa */
+            width: max-content;
+            max-width: 90%; 
+            text-align: center;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .new-price {
+            font-size: 48px;
+            color: var(--gold-accent);
+            font-weight: 900;
+            line-height: 1;
+            text-shadow: 0 2px 10px rgba(242, 201, 76, 0.3);
+        }
+        .currency {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .price-note {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* Botão de Ação (CTA) */
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, var(--btn-purple) 0%, #b266ff 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 18px 20px;
+            border-radius: 50px; 
+            text-transform: uppercase;
+            box-shadow: 0 6px 20px rgba(155, 81, 224, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(155, 81, 224, 0.6);
+            background: linear-gradient(90deg, var(--btn-hover) 0%, var(--btn-purple) 100%);
+        }
+        .secure-checkout {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        /* Animação do Botão */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* Rodapé e Disclaimer */
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #7a738c;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .footer-links {
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            color: #9e95b3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            color: var(--gold-accent);
+        }
+        .disclaimer-text {
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        /* Responsividade e Ajustes Finos Celular */
+        @media (max-width: 600px) {
+            .presell-container {
+                box-shadow: none;
+            }
+            .price-box {
+                /* Aumenta o espaço interno superior no celular para o texto amarelo quebrado não tampar o preço antigo */
+                padding-top: 55px; 
+            }
+            .discount-badge {
+                font-size: 12px;
+                top: -18px; /* Ajusta a posição vertical para compensar a quebra de linha */
+            }
+            .new-price { font-size: 40px; }
+            .cta-button { font-size: 18px; padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presell-container">
+        
+        <!-- CABEÇALHO -->
+        <header class="header">
+            <h1>TALISMAN OFICIAL</h1>
+        </header>
+
+        <!-- CONTEÚDO DA PRESELL -->
+        <main class="content">
+            
+            <p class="product-subtitle">Llevá con vos un símbolo exclusivo de energía, tradición y estilo.</p>
+
+            <!-- ÁREA DA IMAGEM -->
+            <div class="image-wrapper">
+                <img src="produto talisman.png" alt="Talisman Original" class="product-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/350x350/1a113a/f2c94c?text=Foto+del+Talisman';">
+            </div>
+
+            <!-- BENEFÍCIOS -->
+            <ul class="benefits-list">
+                <li>Diseño exclusivo y detallado con acabados premium.</li> 
+                <li>Un accesorio simbólico ideal para uso personal o para regalar.</li>
+                <li>Envío seguro y directo a la puerta de tu casa.</li>
+            </ul>
+
+            <!-- SEÇÃO DE PREÇO (Corrigida) -->
+            <div class="price-box">
+                <div class="discount-badge">Descuento Especial Aplicado: 50% OFF</div>
+                <div class="old-price">Precio regular: 97.780 ARS</div> 
+                <div class="new-price">48.890 <span class="currency">ARS</span></div>
+                <p class="price-note">*Precio final exclusivo para compras hoy.</p>
+            </div>
+
+            <!-- BOTÃO DE AÇÃO -->
+            <a href="https://3vfzd.doctorovtech.com/l" class="cta-button" rel="nofollow">
+                PEDÍ EL TUYO AHORA
+            </a>
+
+            <div class="secure-checkout">
+                🔒 Compra 100% Segura y Protegida
+            </div>
+
+        </main>
+
+        <!-- RODAPÉ OBRIGATÓRIO -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#">Políticas de Privacidad</a> | 
+                <a href="#">Términos y Condiciones</a> | 
+                <a href="#">Contacto</a>          
+            </div>
+            <div class="disclaimer-text">
+                <p><strong>Aviso Legal (Disclaimer):</strong> Este producto se comercializa exclusivamente como un accesorio decorativo y simbólico. No garantizamos, prometemos ni aseguramos resultados mágicos, financieros, de salud o cambios drásticos en la vida de los usuarios. Los resultados dependen exclusivamente de las creencias y acciones personales de cada individuo. La información de esta página es puramente ilustrativa.</p>
+                <br>
+                <p>Página creada en conformidad con las políticas de publicidad. Este es un sitio independiente que redirige al fabricante oficial del producto.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
